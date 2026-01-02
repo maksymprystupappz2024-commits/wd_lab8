@@ -1,0 +1,87 @@
+
+:root{
+  --brand-1:#0b1320;
+  --brand-2:#111a2e;
+  --accent:#2dd4bf;
+}
+
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  background: radial-gradient(1000px 500px at 10% 0%, rgba(45,212,191,.18), transparent 55%),
+              radial-gradient(900px 480px at 100% 10%, rgba(59,130,246,.14), transparent 55%),
+              linear-gradient(180deg, var(--brand-1), var(--brand-2));
+  color:#eaf0ff;
+}
+
+.navbar{
+  background: rgba(17,26,46,.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.hero{
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.hero .badge{
+  background: rgba(45,212,191,.12);
+  border: 1px solid rgba(45,212,191,.25);
+  color:#a7fff1;
+}
+
+.section-card{
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+  border-radius: 1rem;
+}
+
+.section-title{
+  font-weight: 750;
+  letter-spacing: .2px;
+}
+
+.small-muted{ color: rgba(234,240,255,.75); }
+
+.btn-accent{
+  --bs-btn-bg: var(--accent);
+  --bs-btn-border-color: var(--accent);
+  --bs-btn-hover-bg: #22c7b4;
+  --bs-btn-hover-border-color:#22c7b4;
+  --bs-btn-color:#06221e;
+  --bs-btn-hover-color:#06221e;
+  font-weight: 700;
+}
+
+.form-control, .form-select{
+  background: rgba(255,255,255,.06);
+  border-color: rgba(255,255,255,.14);
+  color:#eaf0ff;
+}
+.form-control:focus, .form-select:focus{
+  background: rgba(255,255,255,.08);
+  border-color: rgba(45,212,191,.60);
+  box-shadow: 0 0 0 .25rem rgba(45,212,191,.15);
+  color:#eaf0ff;
+}
+.form-control::placeholder{ color: rgba(234,240,255,.55); }
+
+.list-group-item{
+  background: rgba(255,255,255,.04);
+  border-color: rgba(255,255,255,.10);
+  color:#eaf0ff;
+}
+
+.carousel,
+.carousel .carousel-inner,
+.carousel .carousel-item,
+.carousel .carousel-item img{
+  border-radius: 1rem;
+}
+
+footer{
+  border-top: 1px solid rgba(255,255,255,.08);
+  color: rgba(234,240,255,.75);
+}
